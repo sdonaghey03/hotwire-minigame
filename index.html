@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>Hotwire System</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+  <div id="outerContainer">
+    <h1>Hotwire System</h1>
+    <div id="container">
+      <div class="loading-grey">
+        <div id="progressBar" class="loading-green" style="height:24px;width:100%"></div>
+      </div>
+      <div id="left-container">
+        <div id="wire-one" draggable="true" class="wire wire-one">
+        </div>
+        <div id="wire-two" draggable="true" class="wire wire-two">
+        </div>
+        <div id="wire-three" draggable="true" class="wire wire-three">
+        </div>
+        <div id="wire-four" draggable="true" class="wire wire-four">
+        </div>
+      </div>
+      <div id="right-container">
+        <div id="socket-one" class="socket" style="top: 5px;">
+          <span class="check hide"><img src="img/check.png" /></span>
+        </div>
+        <div id="socket-two" class="socket" style="top: 55px;">
+          <span class="check hide"><img src="img/check.png" /></span>
+        </div>
+        <div id="socket-three" class="socket" style="top: 105px;">
+          <span class="check hide"><img src="img/check.png" /></span>
+        </div>
+        <div id="socket-four" class="socket" style="top: 155px;">
+          <span class="check hide"><img src="img/check.png" /></span>
+        </div>
+      </div>
+    </div>
+    <p class="callout">Connect the wires appropriately within the allocated time period to hotwire the vehicle.</p>
+    <div id="outcome-success" class="success hide"><h3>SUCCESS</h3></div>
+    <div id="outcome-failed" class="failed hide"><h3>FAILED</h3></div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
