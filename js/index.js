@@ -65,6 +65,7 @@ function randomIntFromInterval(min, max) {
 
 function startProgressBar() {
   var elem = document.getElementById("progressBar");
+  var timeLeft = document.getElementById("time-left");
   interval = setInterval(frame, 10);
   function frame() {
     if (timer <= 0) {
@@ -73,6 +74,7 @@ function startProgressBar() {
     } else {
       timer = timer - 0.2;
       elem.style.width = timer + '%';
+      timeLeft.innerHTML = Math.ceil((timer/2) / 10);
     }
   }
 }

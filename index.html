@@ -2,13 +2,24 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-    <title>Hotwire System</title>
+    <title>Hotwire Demo</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans">
   </head>
 <body>
   <div id="outerContainer">
-    <h1>Hotwire System</h1>
+    <div id="header">
+      <h2>HOTWIRE VEHICLE</h2>
+      <div id="sub-header-left">
+        <h3>Scout</h3>
+      </div>
+      <div id="sub-header-right">
+        <h3>Blue</h3>
+      </div>
+    </div>
     <div id="container">
+      <div id="timer"><span id="time-left">..</span></div>
       <div class="loading-grey">
         <div id="progressBar" class="loading-green" style="height:24px;width:100%"></div>
       </div>
@@ -36,10 +47,12 @@
           <span class="check hide"><img src="img/check.png" /></span>
         </div>
       </div>
+      <div id="hint-text">
+        <p>CONNECT THE WIRES WITHIN THE ALLOCATED TIME PERIOD TO HOTWIRE THE VEHICLE</p>
+      </div>
     </div>
-    <p class="callout">Connect the wires appropriately within the allocated time period to hotwire the vehicle.</p>
-    <div id="outcome-success" class="success hide"><h3>SUCCESS</h3></div>
-    <div id="outcome-failed" class="failed hide"><h3>FAILED</h3></div>
+    <div id="outcome-success" class="success hide"><h3>SUCCESS!</h3></div>
+    <div id="outcome-failed" class="failed hide"><h3>FAILED ATTEMPT!</h3></div>
   </div>
   <script src="js/index.js"></script>
 </body>
